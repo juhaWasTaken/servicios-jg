@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets"
+import Container from "@/components/Container.astro"
+import construction1 from "@/assets/images/construction1.webp"
+import construction2 from "@/assets/images/construction2.webp"
+import construction3 from "@/assets/images/construction3.webp"
+import construction4 from "@/assets/images/construction4.webp"
+
+const works = [
+    {
+        name: 'Football field construction',
+        tag: 'Construction',
+        img: construction1,
+    },
+    {
+        name: 'Mounting of metal structures',
+        tag: 'Industrial',
+        img: construction2,
+    },
+    {
+        name: 'Construction warehouse',
+        tag: 'Construction',
+        img: construction3,
+    },
+    {
+        name: 'Repair of industrial machinery',
+        tag: 'Industrial',
+        img: construction4,
+    },
+]
+---
+<Container class="py-12 md:py-20 px-3">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-5 mb-10">
+        <div>
+            <p class="uppercase text-blueDarker font-bold text-sm mb-4">Construction Projects!</p>
+            <h2 class="text-[1.75rem] md:text-3xl lg:text-[2.625rem] text-blueDarker font-bold text-balance ">Construction and manage places infrastructures!</h2>
+        </div>
+        <div class="flex flex-col md:items-end w-fit justify-start gap-4">
+            <p class="text-[1.063rem] text-blueDarker md:text-end ">Construction is a general term meaning the art and industrial science of old french construction.</p>
+            <a class="px-8 py-4 bg-blueMain font-bold text-white w-full sm:w-fit text-center" href="#">View All Projects</a>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {works.map((work) => (
+            <div class="relative overflow-hidden group">
+                <Image 
+                    src={work.img} 
+                    alt={work.name} 
+                    class="w-full h-[355px] object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-blueDarker to-transparent">
+                    <div class="absolute bottom-0 left-0 p-5 w-full">
+                        <span class="inline-block px-3 py-1 bg-blueMain text-white text-sm font-semibold mb-2">
+                            {work.tag}
+                        </span>
+                        <h3 class="text-white text-xl font-bold">{work.name}</h3>
+                    </div>
+                </div>
+            </div>
+        ))}
+    </div>
+</Container>

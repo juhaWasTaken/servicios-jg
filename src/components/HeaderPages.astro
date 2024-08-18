@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets"
+const {class: className, src, phrase, title, title2, text } =  Astro.props
+---
+<!--
+<section>
+    <Image src={src} alt="Page Header" class="relative h-[350px] w-full bg-center bg-cover object-cover object-center" />
+    <div class="absolute bg-black opacity-50"></div>
+    <section class="relative">
+        <p class="text-[#dddddd] font-bold uppercase text-sm mb-3">{phrase}</p>
+        <h2 class="text-white font-bold text-[28px] md:text-3xl lg:text-[42px] mb-5">{title}</h2>
+        <p class="text-[#dddddd] font-bold uppercase text-[17px]">{text}</p>
+    </section>
+</section>
+-->
+
+
+<section class="relative h-[380px] md:h-[350px] w-full overflow-hidden p-3">
+    <Image 
+        src={src} 
+        alt="Page Header" 
+        class="absolute inset-0 w-full h-full object-cover object-center"
+    />
+    <div class="absolute inset-0 bg-[#092553] opacity-60"></div>
+    <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 max-w-[800px] mx-auto ">
+        <p class="text-[#dddddd] font-bold uppercase text-sm mb-3">{phrase}</p>
+        <div>
+            <h2 class="text-white font-bold text-[28px] md:text-3xl lg:text-[42px] mb-5 text-balance">{title}</h2>
+            <h2 class="text-white font-bold text-[28px] md:text-3xl lg:text-[42px] mb-5 text-balance">{title2}</h2>
+        </div>
+        <p class="text-[#dddddd] font-bold  text-[17px]">{text}</p>
+    </div>
+</section>

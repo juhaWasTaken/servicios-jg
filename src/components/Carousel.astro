@@ -1,0 +1,73 @@
+---
+import { Image } from "astro:assets"
+import mapPattern from '@/assets/images/mapPattern.png';
+import logo1 from '@/assets/images/logo1.webp';
+import logo2 from '@/assets/images/logo2.jpg';
+import logo3 from '@/assets/images/logo3.jpg';
+
+const testimonials = [
+{
+    name: "Ruben Dias",
+    role: "Marketer",
+    image: logo1,
+    quote: "Construction is the art of making a meaningful whole out of many parts. Buildings are witnesses to the human ability to construct things."
+},
+{
+    name: "Lionel Messi",
+    role: "Engineer",
+    image: logo2,
+    quote: "Construction is the art of making a meaningful whole out of many parts. Buildings are witnesses to the human ability to construct things."
+},
+{
+    name: "Erling Haaland",
+    role: "Technician",
+    image: logo3,
+    quote: "Construction is the art of making a meaningful whole out of many parts. Buildings are witnesses to the human ability to construct things."
+}
+];
+
+---
+<!-- <section class="max-w-7xl mx-auto pb-12 md:pb-20">
+    <div class="flex flex-col items-center p-4 ">
+        <p class="uppercase text-blueDarker font-bold text-sm mb-5">Client testimonial</p>
+        <h2 class="text-[1.75rem] md:text-3xl lg:text-[2.625rem] text-blueDarker font-bold text-balance ">Our Client Reviews</h2>
+        <p class="text-[1.063rem] text-blueDarker text-center mt-5 md:max-w-[420px] text-balance">Construction is a general term meaning the art and industrial science of old french construction.</p>
+    </div>
+</section>  -->
+<div class="gradietnCustom max-w-full">
+    <section class="max-w-7xl mx-auto pb-12 md:pb-20 ">
+        <div class="flex flex-col items-center p-4">
+          <p class="uppercase text-blueDarker font-bold text-sm mb-5">Client testimonial</p>
+          <h2 class="text-[1.75rem] md:text-3xl lg:text-[2.625rem] text-blueDarker font-bold text-balance">Our Client Reviews</h2>
+          <p class="text-[1.063rem] text-blueDarker text-center mt-5 md:max-w-[420px] text-balance">Construction is a general term meaning the art and industrial science of old french construction.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6 px-4">
+          {testimonials.map((testimonial) => (
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+              <Image 
+                src={testimonial.image} 
+                alt={testimonial.name} 
+                class="w-24 h-24 rounded-full mb-4"
+              />
+              <h3 class="text-xl font-bold text-blueDarker">{testimonial.name}</h3>
+              <p class="text-sm text-gray-600 mb-4">{testimonial.role}</p>
+              <p class="text-gray-700 mb-4">{testimonial.quote}</p>
+              <div class="flex">
+                {[...Array(4)].map(() => (
+                  <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                ))}
+                <svg class="w-5 h-5 text-gray-300 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+</div>
+
+
