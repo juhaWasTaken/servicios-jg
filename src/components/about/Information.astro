@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import InfoSection from '@/assets/images/InfoSection.webp'
+import Container from "../Container.astro";
+---
+
+<section class="relative my-[50px] md:my-20">
+    <Image src={InfoSection} alt="Information Section" class="relative h-[380px] bg-center md:max-h-[230px] w-full object-cover md:object-top" loading='eager' />
+    <div class="absolute inset-0 bg-[#092553] opacity-60 z-10"></div>
+    <!-- <Container class="flex flex-col md:flex-row justify-between gap-8 absolute z-20 px-3 inset-0"> -->
+    <Container class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:justify-between md:items-center md:gap-8 absolute z-20 px-3 inset-0">
+        <div class="flex items-center gap-4 mx-auto">
+            <h2 class="text-white font-medium text-[50px]">25</h2>
+            <p class="text-white font-medium text-[15px] max-w-[105px] uppercase">Equipment to work</p>
+        </div>
+        <div class="flex items-center gap-4 mx-auto">
+            <h2 class="text-white font-medium text-[50px]">16</h2>
+            <p class="text-white font-medium text-[15px] max-w-[105px] uppercase">Specialized Services</p>
+        </div>
+        <div class="flex items-center gap-4 mx-auto">
+            <h2 class="text-white font-medium text-[50px]">10</h2>
+            <p class="text-white font-medium text-[15px] max-w-[105px] uppercase">Years of experience</p>
+        </div>        
+        <div class="flex items-center gap-4 mx-auto">
+            <h2 class="text-white font-medium text-[50px]">30</h2>
+            <p class="text-white font-medium text-[15px] max-w-[105px] uppercase">Completed Projects</p>
+        </div>
+    </Container>
+</section>
+

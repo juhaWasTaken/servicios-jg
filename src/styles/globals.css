@@ -13,7 +13,7 @@
 		--black: #000;
 	}
 	body {
-		font-family: 'Helvetica', 'Inter Variable', sans-serif;
+		font-family: 'Inter Variable', sans-serif;
 	}
 	.shadowNavbar {
 		/* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
@@ -33,5 +33,7 @@
 		background: rgb(255,255,255);
 		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(241,244,249,1) 50%);
 	}
+
+
 
 }

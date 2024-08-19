@@ -2,18 +2,25 @@
 import Layout from '../layouts/Layout.astro';
 import HeaderPages from '@/components/HeaderPages.astro';
 import PageHeader from '@/assets/images/PageHeader.webp';
+import Statement from '@/components/about/Statement.astro';
+import Information from '@/components/about/Information.astro';
+import Questions from '@/components/about/Questions.astro';
+import Footer from '@/components/Footer.astro';
 ---
 
-<Layout title="JG Servicios & Proyectos Industriales">
+<Layout title="About Us">
 	<HeaderPages 
 		src={PageHeader} 
 		phrase="Leading developer company!" 
-		title="High quality construction"
-		title2="solutions for industries!"
+		title="High quality construction solutions for industries!"
 		text="Construction Is A General Term Meaning The Art And Science To Form Objects Systems Organizations, And Comes From Latin" 
 	/>
 	<main>
+		<Statement />
+		<Information />
+		<Questions />
 	</main>
+	<Footer />
 </Layout>
 
 

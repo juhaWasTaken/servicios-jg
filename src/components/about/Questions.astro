@@ -1,0 +1,66 @@
+---
+import Container from "../Container.astro";
+import ChevronIcon from '@/components/about/ChevronIcon.astro'
+---
+<Container class="mb-20">
+    <div class="text-center flex flex-col items-center mb-8 px-5">
+        <h2 class="font-bold text-blueDarker text-[1.75rem] md:text-3xl lg:text-[2.625rem] mb-5">Frequently Asked Questions</h2>
+        <p class="text-[#181818] text-[1.063rem] w-full sm:max-w-[420px]">These are some frequently asked questions from our customers to get to know us better</p>
+    </div>
+    <section class="grid grid-cols-1 md:grid-cols-2 md:items-center"> 
+        <div class="mb-4 md:mb-0">
+
+            <details class="group px-[10px]" name="questions">
+                <summary class="list-none p-5 border border-[#eeeeee] text-base cursor-pointer font-semibold text-blueLight flex justify-between items-center">
+                    <span>What's the company's mission?</span>
+                    <ChevronIcon />
+                </summary>
+                <p class="border border-opacity-50 border-[#eeeeee] py-[7px] px-[15px] md:py-[15px] md:px-5 text-base md:text-[17px] text-blueLight transition-max-height duration-300 overflow-hidden max-h-0 group-open:max-h-40">The company's mission is to provide high-quality products and services to our customers, while fostering innovation and sustainability in everything we do.</p>
+            </details>
+
+            <details class="group px-[10px]" name="questions">
+                <summary class="list-none p-5 border border-[#eeeeee] text-base cursor-pointer font-semibold text-blueLight flex justify-between items-center">
+                    <span>What are the core values of the company?</span>
+                    <ChevronIcon />
+                </summary>
+                <p class="border border-opacity-50 border-[#eeeeee] py-[7px] px-[15px] md:py-[15px] md:px-5 text-base md:text-[17px] text-blueLight transition-max-height duration-300 overflow-hidden max-h-0 group-open:max-h-40">The core values of the company include integrity, teamwork, customer satisfaction, and continuous improvement.</p>
+            </details>
+
+            <details class="group px-[10px]" name="questions">
+                <summary class="list-none p-5 border border-[#eeeeee] text-base cursor-pointer font-semibold text-blueLight flex justify-between items-center">
+                    <span>What is the company's vision for the future?</span>
+                    <ChevronIcon />
+                </summary>
+                <p class="border border-opacity-50 border-[#eeeeee] py-[7px] px-[15px] md:py-[15px] md:px-5 text-base md:text-[17px] text-blueLight transition-max-height duration-300 overflow-hidden max-h-0 group-open:max-h-40">The company envisions becoming a global leader in its industry, driving innovation and making a positive impact on society.</p>
+            </details>
+
+        </div>
+        <div>
+
+            <details class="group px-[10px]" name="questions">
+                <summary class="list-none p-5 border border-[#eeeeee] text-base cursor-pointer font-semibold text-blueLight flex justify-between items-center">
+                    <span>How does the company prioritize sustainability?</span>
+                    <ChevronIcon />
+                </summary>
+                <p class="border border-opacity-50 border-[#eeeeee] py-[7px] px-[15px] md:py-[15px] md:px-5 text-base md:text-[17px] text-blueLight transition-max-height duration-300 overflow-hidden max-h-0 group-open:max-h-40">The company is committed to minimizing its environmental footprint by implementing sustainable practices throughout its operations.</p>
+            </details>
+
+            <details class="group px-[10px]" name="questions">
+                <summary class="list-none p-5 border border-[#eeeeee] text-base cursor-pointer font-semibold text-blueLight flex justify-between items-center">
+                    <span>What is the company's approach to employee development?</span>
+                    <ChevronIcon />
+                </summary>
+                <p class="border border-opacity-50 border-[#eeeeee] py-[7px] px-[15px] md:py-[15px] md:px-5 text-base md:text-[17px] text-blueLight transition-max-height duration-300 overflow-hidden max-h-0 group-open:max-h-40">The company believes in investing in its employees' growth and development through training programs, mentorship, and career advancement opportunities.</p>
+            </details>
+
+            <details class="group px-[10px]" name="questions">
+                <summary class="list-none p-5 border border-[#eeeeee] text-base cursor-pointer font-semibold text-blueLight flex justify-between items-center">
+                    <span>How does the company give back to the community?</span>
+                    <ChevronIcon />
+                </summary>
+                <p class="border border-opacity-50 border-[#eeeeee] py-[7px] px-[15px] md:py-[15px] md:px-5 text-base md:text-[17px] text-blueLight transition-max-height duration-300 overflow-hidden max-h-0 group-open:max-h-40">The company actively participates in community outreach programs, sponsors local events, and supports charitable initiatives to give back to the community.</p>
+            </details>
+
+        </div>
+    </section>
+</Container>

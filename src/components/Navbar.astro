@@ -21,9 +21,9 @@ const currentPath = pathname.slice(1);
         <ul class="md:flex md:gap-5 hidden">
             <li><a class={`${currentPath === '' ? 'text-[#04adbf]' : ''} font-bold text-base hover:text-[#04adbf]`} href="/">Home</a></li>
             <li><a class={`${currentPath === 'about' ? 'text-[#04adbf]' : ''} font-bold text-base hover:text-[#04adbf]`} href="/about">About</a></li>
-            <li><a class={`${currentPath === 'services' ? 'text-[#04adbf]' : ''} font-bold text-base hover:text-[#04adbf]`} href="#">Services</a></li>
-            <li><a class={`${currentPath === 'portfolio' ? 'text-[#04adbf]' : ''} font-bold text-base hover:text-[#04adbf]`} href="#">Portfolio</a></li>
-            <li><a class="font-bold text-base text-white bg-[#04adbf] px-5 py-3 hover:bg-black transition-all ease-in delay-100" href="#">Contact</a></li>
+            <li><a class={`${currentPath === 'services' ? 'text-[#04adbf]' : ''} font-bold text-base hover:text-[#04adbf]`} href="/services">Services</a></li>
+            <li><a class={`${currentPath === 'portfolio' ? 'text-[#04adbf]' : ''} font-bold text-base hover:text-[#04adbf]`} href="/portfolio">Portfolio</a></li>
+            <li><a class="font-bold text-base text-white bg-[#04adbf] px-5 py-3 hover:bg-black transition-all ease-in delay-100" href="/contact">Contact</a></li>
         </ul>
 
         <button id="menuButton" class="md:hidden">
@@ -41,9 +41,9 @@ const currentPath = pathname.slice(1);
         <ul class="flex flex-col items-start p-5">
             <li class={`${currentPath === '' ? 'text-[#04adbf]' : ''} border-b border-[#EEEEEE] py-[10px] w-full hover:text-[#04adbf]`} ><a class="font-medium text-base" href="/">Home</a></li>
             <li class={`${currentPath === 'about' ? 'text-[#04adbf]' : ''} border-b border-[#EEEEEE] py-[10px] w-full hover:text-[#04adbf]`} ><a class="font-medium text-base" href="/about">About</a></li>
-            <li class={`${currentPath === 'services' ? 'text-[#04adbf]' : ''} border-b border-[#EEEEEE] py-[10px] w-full hover:text-[#04adbf]`} ><a class="font-medium text-base" href="#">Services</a></li>
-            <li class={`${currentPath === 'portfolio' ? 'text-[#04adbf]' : ''} border-b border-[#EEEEEE] py-[10px] w-full hover:text-[#04adbf]`} ><a class="font-medium text-base" href="#">Portfolio</a></li>
-            <li class={`${currentPath === 'contact' ? 'text-[#04adbf]' : ''} border-b border-[#EEEEEE] py-[10px] w-full hover:text-[#04adbf]`} ><a class="font-medium text-base" href="#">Contact</a></li>
+            <li class={`${currentPath === 'services' ? 'text-[#04adbf]' : ''} border-b border-[#EEEEEE] py-[10px] w-full hover:text-[#04adbf]`} ><a class="font-medium text-base" href="/services">Services</a></li>
+            <li class={`${currentPath === 'portfolio' ? 'text-[#04adbf]' : ''} border-b border-[#EEEEEE] py-[10px] w-full hover:text-[#04adbf]`} ><a class="font-medium text-base" href="/portfolio">Portfolio</a></li>
+            <li class={`${currentPath === 'contact' ? 'text-[#04adbf]' : ''} border-b border-[#EEEEEE] py-[10px] w-full hover:text-[#04adbf]`} ><a class="font-medium text-base" href="/contact">Contact</a></li>
         </ul>
         <div class="p-5">
             <div class="flex flex-col gap-3">

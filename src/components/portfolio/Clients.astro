@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import Container from "../Container.astro";
+import logo3 from '@/assets/images/logo3.jpg'
+---
+<Container class="my-20">
+    <section class="flex flex-col gap-10 px-5">
+        <div class="flex flex-col md:flex-row justify-between">
+            <h2 class="text-[1.75rem] md:text-3xl lg:text-[2.625rem] text-blueDarker font-bold mb-4">Clients we have worked with</h2>
+            <p class="md:text-end text-blueDarker max-w-[300px]">These are some of the clients we have worked with over the years. </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 items-center justify-center ">
+            <Image src={logo3} alt="Client 1" class="border border-[#eeeeee] transition-all ease-in hover:scale-95" />
+            <Image src={logo3} alt="Client 2" class="border border-[#eeeeee] transition-all ease-in hover:scale-95" />
+            <Image src={logo3} alt="Client 3" class="border border-[#eeeeee] transition-all ease-in hover:scale-95" />
+            <Image src={logo3} alt="Client 4" class="border border-[#eeeeee] transition-all ease-in hover:scale-95" />
+            <Image src={logo3} alt="Client 5" class="border border-[#eeeeee] transition-all ease-in hover:scale-95" />
+            <Image src={logo3} alt="Client 6" class="border border-[#eeeeee] transition-all ease-in hover:scale-95" />
+            <Image src={logo3} alt="Client 6" class="border border-[#eeeeee] transition-all ease-in hover:scale-95" />
+            <Image src={logo3} alt="Client 6" class="border border-[#eeeeee] transition-all ease-in hover:scale-95" />
+        </div>
+    </section>
+</Container>
