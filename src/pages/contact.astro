@@ -1,0 +1,20 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import HeaderPages from "@/components/HeaderPages.astro";
+import contact from '@/assets/images/contact.webp';
+import Form from "@/components/contact/Form.astro";
+import FooterPage from '@/components/contact/FooterPage.astro'
+---
+<Layout title="Contact">
+    <HeaderPages 
+        src={contact} 
+        phrase="Years of experience in the industry" 
+        title="Do you have a project in mind?"
+        text="Let's send a message and start working together. We have a great customer service and quality in our work." 
+    />
+    <main>
+        <Form />
+    </main>
+    <FooterPage />
+    
+</Layout>
