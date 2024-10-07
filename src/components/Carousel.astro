@@ -23,28 +23,28 @@ const testimonials = [
     role: "Technician",
     image: logo3,
     quote: "Construction is the art of making a meaningful whole out of many parts. Buildings are witnesses to the human ability to construct things."
-}
+},
+{
+    name: "Lionel Messi",
+    role: "Engineer",
+    image: logo2,
+    quote: "Construction is the art of making a meaningful whole out of many parts. Buildings are witnesses to the human ability to construct things."
+},
 ];
 
 ---
-<!-- <section class="max-w-7xl mx-auto pb-12 md:pb-20">
-    <div class="flex flex-col items-center p-4 ">
-        <p class="uppercase text-blueDarker font-bold text-sm mb-5">Client testimonial</p>
-        <h2 class="text-[1.75rem] md:text-3xl lg:text-[2.625rem] text-blueDarker font-bold text-balance ">Our Client Reviews</h2>
-        <p class="text-[1.063rem] text-blueDarker text-center mt-5 md:max-w-[420px] text-balance">Construction is a general term meaning the art and industrial science of old french construction.</p>
-    </div>
-</section>  -->
+
 <div class="gradietnCustom max-w-full">
     <section class="max-w-7xl mx-auto pb-12 md:pb-20 ">
-        <div class="flex flex-col items-center p-4">
-          <p class="uppercase text-blueDarker font-bold text-sm mb-5">Client testimonial</p>
-          <h2 class="text-[1.75rem] md:text-3xl lg:text-[2.625rem] text-blueDarker font-bold text-balance text-center">Our Client Reviews</h2>
-          <p class="text-[1.063rem] text-blueDarker text-center mt-5 md:max-w-[420px] text-balance">Construction is a general term meaning the art and industrial science of old french construction.</p>
+        <div class="flex flex-col items-center px-4 pb-4">
+          <p class="uppercase text-blueDarker font-bold text-sm mb-5">Testimonios de clientes</p>
+          <h2 class="text-[1.75rem] md:text-3xl lg:text-[2.625rem] text-blueDarker font-bold text-balance text-center">Opiniones de nuestros clientes</h2>
+          <p class="text-[1.063rem] text-blueDarker text-center mt-5 md:max-w-[520px]">Gracias a tantos años en la industria hemos podido realizar numerosos proyectos los cuales nos han permitido tener gran relación con nuestros clientes.</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-6 px-4">
           {testimonials.map((testimonial) => (
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+            <div class="bg-white  shadow-md p-6 flex flex-col items-center text-center">
               <Image 
                 src={testimonial.image} 
                 alt={testimonial.name} 

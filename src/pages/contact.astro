@@ -2,18 +2,19 @@
 import Layout from "@/layouts/Layout.astro";
 import HeaderPages from "@/components/HeaderPages.astro";
 import contact from '@/assets/images/contact.webp';
-import Form from "@/components/contact/Form.astro";
+import { ContactForm } from "@/components/contact/Form";
 import FooterPage from '@/components/contact/FooterPage.astro'
 ---
-<Layout title="Contact">
+<Layout title="Contacto">
     <HeaderPages 
         src={contact} 
-        phrase="Years of experience in the industry" 
-        title="Do you have a project in mind?"
-        text="Let's send a message and start working together. We have a great customer service and quality in our work." 
+        phrase="Años de experiencia en el sector" 
+        title="¿Tiene algún proyecto en mente?"
+        text="Envíe un mensaje y empecemos a trabajar juntos. Tenemos un gran servicio al cliente y calidad en nuestro trabajo." 
     />
     <main>
-        <Form />
+        <!-- <Form />  -->
+        <ContactForm client:load />  
     </main>
     <FooterPage />
     

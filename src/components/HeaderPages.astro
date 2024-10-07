@@ -13,7 +13,7 @@ const {class: className, src, phrase, title, text } =  Astro.props
     <div class="absolute inset-0 bg-[#092553] opacity-60"></div>
     <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 max-w-[800px] mx-auto ">
         <p class="text-[#dddddd] font-bold uppercase text-sm mb-3">{phrase}</p>
-        <h2 class="text-white font-bold text-[28px] md:text-3xl lg:text-[42px] mb-5 text-balance">{title}</h2>
-        <p class="text-[#dddddd] font-bold text-[17px] text-pretty">{text}</p>
+        <h2 class="text-white font-bold text-[28px] md:text-3xl lg:text-[42px] mb-3 md:mb-5 text-balance lg:leading-tight">{title}</h2>
+        <p class="text-[#dddddd] font-bold text-sm sm:text-[17px] text-pretty">{text}</p>
     </div>
 </section>

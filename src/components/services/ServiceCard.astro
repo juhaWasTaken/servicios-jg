@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+
+const { frontmatter, url } = Astro.props;
+const { service, image1, image2, description, link  } = frontmatter
+---
+<div class="group flex flex-col items-center gap-3 bg-white p-6  shadow-md text-center hover:bg-blueMain transition-all ease-in-out ">
+    <img src={image1.src} alt="Illustration" width={64} height={64} class='group-hover:stroke-white' />
+    <div class="">
+        <h3 class=" text-lg font-semibold text-blueDarker mb group-hover:text-white mb-3 ">{service}</h3>
+        <p class=" text-blueLight font-normal mb-[10px] group-hover:text-white">{description}</p>
+        <a href={link} class=" text-blueMain text-sm hover:underline font-semibold group-hover:text-white">Más información</a> 
+    </div>
+</div>
