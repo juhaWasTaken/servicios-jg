@@ -16,6 +16,7 @@ export default {
 			blueLighter: 'var(--blueLighter)',
 			white: 'var(--white)',
 			black: 'var(--black)',
+			errorRed: 'var(--errorRed)',
 		}
 	},
 	plugins: [],

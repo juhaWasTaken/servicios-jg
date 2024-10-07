@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import scalePattern from '@/assets/images/scale.png';
 import BlancoAzul from '@/assets/images/BlancoAzul.png';
-import MapBackground from "@/assets/images/mapPattern.png"; 
+import mapDotPattern from "@/assets/images/mapDotPattern.png";
 ---
 
 <section class="w-full relative overflow-hidden" style={{
@@ -14,26 +14,26 @@ import MapBackground from "@/assets/images/mapPattern.png";
 }}>
     <div class="max-w-7xl mx-auto flex gap-3 flex-col md:flex-row md:justify-between p-8 relative z-10">
         <h2 class="text-white text-[22px] md:text-2xl lg:text-[28px] font-bold">
-            Looking For High Quality Construction Solutions?
+            ¿Busca soluciones de alta calidad?
         </h2>
-        <a class="bg-blueDarker px-8 py-2 text-[15px] text-white font-bold text-center sm:w-fit" href="#">
-            Make Appointment
+        <a class="bg-blueDarker px-8 py-2 text-[15px] text-white font-bold text-center sm:w-fit" href="/contact">
+            Contáctenos
         </a>
     </div>
 </section>
 
 <footer class="bg-blueDarker relative overflow-hidden">
-    <div class="absolute inset-0 opacity-100">
-        <Image src={MapBackground} alt="World Map" class="mx-auto max-w-7xl h-auto object-cover z-20" />
+    <div class="absolute inset-0 opacity-100 z-10 flex items-center justify-center pointer-events-none">
+        <Image src={mapDotPattern} alt="World Map" class="mx-auto max-w-2xl  h-auto object-cover z-0 opacity-10" />
     </div>
     
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 py-12 relative z-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 py-12 relative z-20">
         
         <!-- Logo and Description -->
         <div class="space-y-4">
             <Image src={BlancoAzul} alt="Buildico Logo" class="h-20 w-auto" />
             <p class="text-white text-sm">
-                Buildico is established in 1984, the world's most trusted infrastructure and consulting firm in worldwide.
+                JG Servicios & Proyectos Industriales ofrece soluciones integrales para la industria desde 2013. Nuestra experiencia nos permiten brindar calidad y eficiencia en cada proyecto.
             </p>
             <div class="flex space-x-4">
                 <a href="#" class="flex items-center bg-[#213b65] p-2">
@@ -47,20 +47,20 @@ import MapBackground from "@/assets/images/mapPattern.png";
 
         <!-- Useful Links -->
         <div>
-            <h3 class="text-white font-bold mb-2">Useful links</h3>
+            <h3 class="text-white font-bold mb-2">Enlaces de interés</h3>
             <div class="bg-blueMain h-1 w-32 mb-4"></div>
             <ul class="grid grid-cols-1 sm:grid-cols-2 items-center gap-2">
-                <li><a href="/" class="text-[#9ca3af] hover:text-white">Home</a></li>
-                <li><a href="/about" class="text-[#9ca3af] hover:text-white">About</a></li>
-                <li><a href="/services" class="text-[#9ca3af] hover:text-white">Services</a></li>
-                <li><a href="/portfolio" class="text-[#9ca3af] hover:text-white">Portfolio</a></li>
-                <li><a href="/contact" class="text-[#9ca3af] hover:text-white">Contact</a></li>
+                <li><a href="/" class="text-[#9ca3af] hover:text-white">Inicio</a></li>
+                <li><a href="/about" class="text-[#9ca3af] hover:text-white">Sobre Nosotros</a></li>
+                <li><a href="/services" class="text-[#9ca3af] hover:text-white">Servicios</a></li>
+                <li><a href="/portfolio" class="text-[#9ca3af] hover:text-white">Portafolio</a></li>
+                <li><a href="/contact" class="text-[#9ca3af] hover:text-white">Contacto</a></li>
             </ul>
         </div>
 
         <!-- Get in Touch -->
         <div>
-            <h3 class="text-white font-bold mb-2">Get in Touch</h3>
+            <h3 class="text-white font-bold mb-2">Póngase en contacto</h3>
             <div class="bg-blueMain h-1 w-32 mb-4"></div>
             <ul class="space-y-3">
                 <li class="flex items-start gap-3 ">
@@ -69,7 +69,7 @@ import MapBackground from "@/assets/images/mapPattern.png";
                 </li>
                 <li class="flex items-center gap-3">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#04adbf"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
-                    <a href="mailto:contact@buildico.com" class="text-[#9ca3af] hover:text-white">contact@buildico.com</a>
+                    <a href="mailto:ventas@jgserviciosindustriales.com" class="text-[#9ca3af] hover:text-white">ventas@jgserviciosindustriales.com</a>
                 </li>
                 <li class="flex items-center gap-3">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#04adbf"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" /><path d="M9 4v13" /><path d="M15 7v5.5" /><path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" /><path d="M19 18v.01" /></svg>
@@ -81,10 +81,11 @@ import MapBackground from "@/assets/images/mapPattern.png";
     </div>
 
     <!-- Copyright -->
-    <div class="border-t border-[#e1e1e1] mt-12">
+    <div class="border-t border-[#e1e1e1] mt-12 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4">
             <p class="text-center text-[#9ca3af] text-xs">
-            Página desarrollada por <a href="https://www.linkedin.com/in/eduardo-ramirez-ramirez/" class="text-white italic">Carlos Gallaga</a> 
+                Página desarrollada por 
+                <a href="https://www.youtube.com/watch?v=hAwa7UVdRnQ&t=1094s" target="_blank" class="text-white italic">Carlos Gallaga</a> 
             </p>
         </div>
     </div>

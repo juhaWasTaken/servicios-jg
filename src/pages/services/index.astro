@@ -1,0 +1,28 @@
+---
+import '@/styles/globals.css';
+import Layout from '@/layouts/Layout.astro';
+import HeaderPages from '@/components/HeaderPages.astro';
+import services from '@/assets/images/services.webp';
+import ServicesHome from '@/components/ServicesHome.astro';
+import ChooseUs from '@/components/services/ChooseUsServices.astro';
+import Footer from '@/components/Footer.astro';
+import Clients from '@/components/portfolio/Clients.astro';
+import Container from '@/components/Container.astro';
+---
+
+<Layout title="Servicios">
+    <HeaderPages 
+        src={services} 
+        phrase="Years of experience in the industry" 
+        title="Do you have a project in mind?"
+        text="Let's send a message and start working together. We have a great customer service and quality in our work." 
+    />
+    <main>
+        <ServicesHome />
+        <ChooseUs />
+        <Clients />
+    </main>
+    <Footer />
+</Layout>
+
+
