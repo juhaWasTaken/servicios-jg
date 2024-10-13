@@ -89,13 +89,19 @@ export const ContactForm = () => {
                             <textarea {...register('message')} className="p-3 border border-[#eeeeee] w-full" placeholder="Mensaje" rows={4} />
                             {errors.message && <span className="text-errorRed mt-2 text-sm">{errors.message.message}</span>}
                         </div>
-                        <button type='submit' className="py-4 px-7 bg-blueMain w-full sm:w-fit mt-5 text-white font-bold hover:bg-black transition-all ease-in delay-25">Enviar Mensaje</button>
+                        <button
+                            type='submit'
+                            className="py-4 px-7 bg-blueMain w-full sm:w-fit mt-5 text-white font-bold hover:bg-black transition-all ease-in delay-25"
+                            disabled={isSubmitting}
+                        >
+                            {isSubmitting ? "Enviando mensaje..." : "Mandar mensaje"}
+                        </button>
                     </form>
                 </section>
                 <section className="w-full md:w-auto object-center object-cover items-stretch">
                     <div className="relative overflow-hidden group">
-                    <img src={form.src} alt="Form" className="relative md:max-h-[547px] md:w-auto max-h-[300px] w-full bg-center object-center object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blueDarker to-transparent"></div>
+                        <img src={form.src} alt="Form" className="relative md:max-h-[547px] md:w-auto max-h-[300px] w-full bg-center object-center object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-blueDarker to-transparent"></div>
                         <div className="absolute bottom-0 left-0 p-5 ">
                             <p className="text-white text-xl font-bold max-w-[200px]">Ofrecemos las mejores soluciones posibles</p>
                         </div>
