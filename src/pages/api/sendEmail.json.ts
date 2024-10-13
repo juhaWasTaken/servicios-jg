@@ -2,6 +2,7 @@
 
 import type { APIRoute } from "astro";
 import { Resend } from "resend";
+import newMessage from "@/emails/new-message";
 
 const resend = new Resend(import.meta.env.RESEND_API_KEY)
 
@@ -19,7 +20,14 @@ export const POST: APIRoute = async ({
             to: 'carlos.gallagav@gmail.com',
             subject: senderSubject,
             replyTo: senderEmail,
-            text: `Name: ${senderName}\nEmail: ${senderEmail}\nPhone: ${senderPhone}\n\nMessage:\n${senderMessage}`,
+            react: newMessage({
+                senderName,
+                senderEmail,
+                senderSubject,
+                senderMessage,
+                senderPhone
+            })
+            // text: `Name: ${senderName}\nEmail: ${senderEmail}\nPhone: ${senderPhone}\n\nMessage:\n${senderMessage}`,
         })
 
         if (error) {
