@@ -6,11 +6,11 @@ import { toast } from 'react-hot-toast';
 import form from '@/assets/images/form.webp';
 
 const schema = z.object({
-    name: z.string().min(2, "Name must be at least 2 characters long"),
-    email: z.string().email("Email is not valid"),
-    subject: z.string().min(5, "Subject must be at least 5 characters long"),
-    phone: z.string().length(10, "Phone number must be 10 digits"),
-    message: z.string().min(10, "Message must be at least 10 characters long"),
+    name: z.string().min(2, "El nombre debe tener al menos 2 caracteres"),
+    email: z.string().email("Email inválido"),
+    subject: z.string().min(5, "Asunto debe tener al menos 5 caracteres"),
+    phone: z.string().length(10, "Número de teléfono debe tener 10 dígitos"),
+    message: z.string().min(10, "Mensaje debe tener al menos 10 caracteres"),
 });
 
 type FormFields = z.infer<typeof schema>;
@@ -89,7 +89,7 @@ export const ContactForm = () => {
                             <textarea {...register('message')} className="p-3 border border-[#eeeeee] w-full" placeholder="Mensaje" rows={4} />
                             {errors.message && <span className="text-errorRed mt-2 text-sm">{errors.message.message}</span>}
                         </div>
-                        <button type='submit' className="py-4 px-7 bg-blueMain w-full sm:w-fit mt-5 text-white font-bold">Enviar Mensaje</button>
+                        <button type='submit' className="py-4 px-7 bg-blueMain w-full sm:w-fit mt-5 text-white font-bold hover:bg-black transition-all ease-in delay-25">Enviar Mensaje</button>
                     </form>
                 </section>
                 <section className="w-full md:w-auto object-center object-cover items-stretch">
