@@ -1,0 +1,25 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import HeaderPages from "@/components/HeaderPages.astro";
+import portfolio from '@/assets/images/Portfolio.webp';
+import Clients from "@/components/portfolio/Clients.astro";
+import ChooseUs from "@/components/ChooseUs.astro";
+import Projects from "@/components/portfolio/Projects.astro";
+import Footer from "@/components/Footer.astro";
+import Carousel from "@/components/Carousel.astro";
+---
+<Layout title="Nuestro Portafolio">
+    <HeaderPages 
+        src={portfolio} 
+        phrase="Years of experience in the industry" 
+        title="Projects made with excellent quality and preparation!"
+        text="Take a look at all the work we have done over the years. With the best quality and customer service" 
+    />
+    <main>
+        <Clients />
+        <ChooseUs />
+        <Projects />
+        <Carousel />
+    </main>
+    <Footer />
+</Layout>

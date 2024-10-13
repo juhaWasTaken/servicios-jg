@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderPages from '@/components/HeaderPages.astro';
+import PageHeader from '@/assets/images/PageHeader.webp';
+import Statement from '@/components/about/Statement.astro';
+import Information from '@/components/about/Information.astro';
+import Questions from '@/components/about/Questions.astro';
+import Footer from '@/components/Footer.astro';
+---
+
+<Layout title="Sobre Nosotros">
+	<HeaderPages 
+		src={PageHeader} 
+		phrase="Empresa experta en soluciones industriales" 
+		title="Soluciones de alta calidad para la industria"
+		text="Innovación, experiencia y compromiso son los valores que nos definen como empresa. Estamos capacitados para ofrecer soluciones de alta calidad ." 
+	/>
+	<main>
+		<Statement />
+		<Information />
+		<Questions />
+	</main>
+	<Footer />
+</Layout>
+
+
