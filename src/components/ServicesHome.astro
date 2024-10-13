@@ -1,64 +1,6 @@
 ---
-import { Image } from "astro:assets"
 import Container from "@/components/Container.astro"
-import dumpTruck from "@/assets/icons/dumpTruck.svg"
-import concretePump from "@/assets/icons/concretePump.svg"
-import forklift from "@/assets/icons/forklift.svg"
-import manipulatorTruck from "@/assets/icons/manipulatorTruck.svg"
-import loader from "@/assets/icons/loader.svg"
-import bulldozer from "@/assets/icons/bulldozer.svg"
 import ServiceCard from "./services/ServiceCard.astro"
-
-// const Services = [
-//     {
-//         name: 'Construction',
-//         description: 'Construction is a general term meaning the art and industrial science of old french construction.',
-//         link: '/pages/blog/service-1/',
-//         icon: dumpTruck
-//     },
-//     {
-//         name: 'Renovation',
-//         description: 'Our renovation services include remodeling, repair, and restoration of existing structures. We provide high-quality workmanship and attention to detail.',
-//         link: '/pages/blog/service-1/',
-//         icon: concretePump
-//     },
-//     {
-//         name: 'Interior Design',
-//         description: 'Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the space.',
-//         link: '/pages/blog/service-1/',
-//         icon: forklift
-//     },
-//     {
-//         name: 'Construction Building',
-//         description: 'Construction building involves the process of constructing new buildings and structures. It includes activities such as site preparation, foundation work, framing, and finishing. ',
-//         link: '/pages/blog/service-1/' ,
-//         icon: manipulatorTruck  
-//     },
-//     {
-//         name: 'Design Estimating',
-//         description: 'Design estimating involves calculating the costs and quantities of materials, labor, and other resources required for a design project. It helps in determining the feasibility and budget of the project.',
-//         link: '/pages/blog/service-1/',
-//         icon: loader
-//     },
-//     {
-//         name: 'General Transport',
-//         description: 'We provide general transport services for construction and renovation projects. We have a wide range of vehicles available.',
-//         link: '/pages/blog/service-1/',
-//         icon: bulldozer   
-//     },
-//     {
-//         name: 'Construction Building',
-//         description: 'Construction building involves the process of constructing new buildings and structures. It includes activities such as site preparation, foundation work, framing, and finishing. ',
-//         link: '/pages/blog/service-1/' ,
-//         icon: manipulatorTruck  
-//     },
-//     {
-//         name: 'Design Estimating',
-//         description: 'Design estimating involves calculating the costs and quantities of materials, labor, and other resources required for a design project. It helps in determining the feasibility and budget of the project.',
-//         link: '/pages/blog/service-1/',
-//         icon: loader
-//     }
-// ]
 
 const allServices = await Astro.glob('@/pages/services/*.md')
 
@@ -72,16 +14,6 @@ const allServices = await Astro.glob('@/pages/services/*.md')
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- {Services.map((service) => (
-                <div class="group flex flex-col items-center gap-3 bg-white p-6  shadow-md text-center hover:bg-blueMain transition-all ease-in-out ">
-                    <Image src={service.icon} alt="Illustration" width={64} height={64} class='group-hover:stroke-white' />
-                    <div class="">
-                        <h3 class=" text-lg font-semibold text-blueDarker mb group-hover:text-white mb-3 ">{service.name}</h3>
-                        <p class=" text-blueLight font-normal mb-[10px] group-hover:text-white">{service.description}</p>
-                        <a href={service.link} class=" text-blueMain text-sm hover:underline font-semibold group-hover:text-white">Learn More</a>
-                    </div>
-                </div>
-            ))} -->
             {
                 allServices.map((service) => (
                     <ServiceCard frontmatter={service.frontmatter} url={service.url} />
