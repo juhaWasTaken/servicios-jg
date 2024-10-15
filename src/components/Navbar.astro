@@ -1,7 +1,6 @@
 ---
 
 import { Image } from 'astro:assets';
-import NegroAzul from '../../public/NegroAzul.webp';
 import Menu from '@/assets/icons/Menu.svg';
 import Close from '@/assets/icons/Close.svg';
 import mail from '@/assets/icons/mail.svg';
@@ -13,7 +12,7 @@ const currentPath = pathname.slice(1);
 <section class="shadowNavbar sticky top-0 left-0 right-0 z-50 bg-white">
     <nav class=" max-w-7xl mx-auto flex items-center justify-between bg-white py-1 pr-3 w-full">
         <div class="flex items-center">
-            <Image src={NegroAzul} alt="Logo" width="80" height="80" loading='eager' />
+            <Image src="/NegroAzul.webp" alt="Logo" width="80" height="80" loading='eager' />
             <h1 class="font-sans font-bold uppercase text-lg md:text-xl lg:text-2xl hidden sm:flex sm:flex-col">JG Servicios 
                 <span class="font-sans font-normal text-xs md:text-sm lg:text-md">& Proyectos Industriales</span>
             </h1>

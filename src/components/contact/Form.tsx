@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { toast } from 'react-hot-toast';
 import form from '@/assets/images/form.webp';
 
+
 const schema = z.object({
     name: z.string().min(2, "El nombre debe tener al menos 2 caracteres"),
     email: z.string().email("Email inválido"),
