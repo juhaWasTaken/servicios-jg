@@ -6,16 +6,18 @@ import Close from '../assets/icons/Close.svg';
 import mail from '../assets/icons/mail.svg';
 import phone from '../assets/icons/phone.svg';
 import map from '../assets/icons/map.svg';
+import Isotipo from '../assets/images/Isotipo.webp'
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1);
 ---
 <section class="shadowNavbar sticky top-0 left-0 right-0 z-50 bg-white">
     <nav class=" max-w-7xl mx-auto flex items-center justify-between bg-white py-1 pr-3 w-full">
         <div class="flex items-center">
-            <Image src="/NegroAzul.webp" alt="Logo" width="80" height="80" loading='eager' />
+            <!-- <Image src="/NegroAzul.webp" alt="Logo" width="80" height="80" loading='eager' />
             <h1 class="font-sans font-bold uppercase text-lg md:text-xl lg:text-2xl hidden sm:flex sm:flex-col">JG Servicios 
                 <span class="font-sans font-normal text-xs md:text-sm lg:text-md">& Proyectos Industriales</span>
-            </h1>
+            </h1> -->
+            <Image src={Isotipo} alt="Isotipo" loading='eager' class="w-auto h-16 md:h-20 py-2" /> 
         </div>
         <ul class="md:flex md:gap-5 hidden text-center items-center">
             <li><a class={`${currentPath === '' ? 'text-[#04adbf]' : ''} font-bold text-base hover:text-[#04adbf]`} href="/">Inicio</a></li>
