@@ -8,9 +8,9 @@ interface Props {
 }
 
 const { title } = Astro.props;
-const titleSEO = "KV Servicios Proyectos y Maquinados Industriales";
-const description = "Somos una empresa dedicada a la calibración, mantenimiento y suministros industriales, con más de 10 años de experiencia en la industria maquiladora y de proyectos de construcción. Ofrecemos servicios como instalaciones eléctricas, mecánicas, soldadura, sistemas de refrigeración, y fabricación estructural de acero.";
-const siteUrl = "https://kvmaquinados.com";
+const titleSEO = "JG Servicios Industriales & Proyectos";
+const description = "Somos una empresa dedicada a la calibración, mantenimiento y suministros industriales, con más de 10 años de experiencia en la industria maquiladora y de proyectos de construcción. Ofrecemos servicios como instalaciones eléctricas, mecánicas, soldadura, sistemas de refrigeración, y fabricación estructural de acero. Somos un grupo de maquinados y fabricantes de acero de alta calidad, con una amplia variedad de productos para diferentes aplicaciones.";
+const siteUrl = "https://jgserviciosindustriales.com";
 const imageUrl = `${siteUrl}/opengraph-image.png`;
 ---
 
@@ -21,12 +21,12 @@ const imageUrl = `${siteUrl}/opengraph-image.png`;
 		<meta name="viewport" content="width=device-width" />
 		<title>{titleSEO}</title>
 		<meta name="description" content={description} />
-		<meta name="keywords" content="maquinados industriales, servicios industriales, mantenimiento industrial, maquinados, calibración, servicios, mantenimiento, soldadura, instalaciones eléctricas, fabricación de acero, grúas viajeras, reynosa, KV Maquinados, KV Servicios Proyectos y Maquinados Industriales, KV Servicios Maquinados, KV Servicios Industriales, KV Servicios, KV Industriales, KV Maquinados Industriales, KV" />
-		<meta name="author" content="KV Maquinados" />
+		<meta name="keywords" content="maquinados industriales, servicios industriales, mantenimiento industrial, maquinados, calibración, servicios, mantenimiento, soldadura, instalaciones eléctricas, fabricación de acero, grúas viajeras, reynosa, JG Servicios, JG Servicios Industriales & Proyectos, JG Industriales & Proyectos, JG, Reynosa, Tamaulipas" />
+		<meta name="author" content="JG Servicios Industriales" />
 	  
-		<!-- Open Graph -->
+		<!-- Open Graph Meta Tags -->
 		<meta property="og:title" content={titleSEO} />
-		<meta property="og:description" content="Empresa líder en calibración, mantenimiento y suministros industriales, con servicios especializados en la industria maquiladora y de proyectos de construcción." />
+		<meta property="og:description" content={description} />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={siteUrl} />
 		<meta property="og:locale" content="es_MX" />
@@ -34,7 +34,8 @@ const imageUrl = `${siteUrl}/opengraph-image.png`;
 		<meta property="og:image" content={imageUrl} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
-		<meta property="og:image:alt" content={titleSEO} />
+		<meta property="og:image:alt" content="Logo de JG Servicios Industriales" />
+
 	  
 		<!-- Favicon -->
 		<link rel="icon" href="/favicons/NegroAzul.png" media="(prefers-color-scheme: no-preference)" type="image/png" />
