@@ -25,9 +25,6 @@
 	#mobileMenu.open {
 		@apply translate-x-0;
 	}
-	.bgImg {
-		background-image: url('../assets/images/image1.webp');
-	}
 
 	.gradietnCustom {
 		background: rgb(255,255,255);
