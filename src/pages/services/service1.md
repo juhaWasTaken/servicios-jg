@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-service: "Instalaciones Eléctricas"
-description: "Diseño e implementación de sistemas eléctricos de alta y baja tensión para industrias, cumpliendo con normas mexicanas y NEC"
+service: "Soldadura y Fabricación Estructural"
+description: "Ofrecemos una amplia gama de servicios de soldadura y fabricación estructural, abarcando desde aluminio hasta acero inoxidable y acero al carbono."
 image1: {
     src: "/service1/concretePump.svg",
     alt: "test"
@@ -13,4 +13,7 @@ image2: {
 link: "/services/service1"
 ---
 
-We have tried and you finding hell, i may just sacrifie clusless and just trust you will be fine, and when im back in chicago i feel it, goodbye goodbye, you take the man out the city not the city out of the man
+Ofrecemos una amplia gama de servicios de soldadura y fabricación estructural, abarcando desde aluminio hasta acero inoxidable y acero al carbono. Nuestra experiencia en este campo nos permite realizar proyectos complejos como la fabricación de estructuras metálicas, celdas de producción, protecciones, escaleras, puertas y portones, bastidores, racks, estructuras de acero, depósitos y estructuras para techos. Además, nos especializamos en la fabricación de puentes estructurales para grúas viajeras, lo que demuestra nuestra capacidad para manejar proyectos de gran envergadura y complejidad técnica.
+
+
+Contamos con un taller de soldadura equipado con tecnología avanzada, lo que nos permite ofrecer servicios de alta calidad y precisión. Nuestra experiencia en la industria maquiladora y en proyectos de construcción nos proporciona un entendimiento profundo de las necesidades específicas de nuestros clientes en diversos sectores industriales.

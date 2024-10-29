@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-service: "Gases Especiales"
-description: "Instalación y mantenimiento de sistemas de gases especiales de alta presión, incluyendo argón, nitrógeno y oxígeno."
+service: "Instalaciones Industriales y Gestión de Proyectos"
+description: "Ofrecemos servicios integrales de instalaciones industriales y gestión de proyectos, abarcando una amplia gama de sistemas críticos para el funcionamiento eficiente de plantas y fábricas. "
 image1: {
     src: "/service1/concretePump.svg",
     alt: "test"
@@ -13,4 +13,5 @@ image2: {
 link: "/services/service4"
 ---
 
-We have tried and you finding hell, i may just sacrifie clusless and just trust you will be fine, and when im back in chicago i feel it, goodbye goodbye, you take the man out the city not the city out of the man
+Ofrecemos servicios integrales de instalaciones industriales y gestión de proyectos, abarcando una amplia gama de sistemas críticos para el funcionamiento eficiente de plantas y fábricas. Nuestros servicios incluyen la instalación y mantenimiento de sistemas eléctricos de alta y baja tensión, siguiendo las normas mexicanas y NEC. Nos especializamos en la instalación de loops de aire comprimido, agua y gases especiales, asegurando la distribución eficiente de estos recursos vitales en entornos industriales.
+Además, realizamos instalaciones de sistemas neumáticos, hidráulicos y de gases especiales como argón, nitrógeno y oxígeno, cumpliendo con los estándares y normas más estrictos. Nuestro equipo de ingenieros y técnicos altamente capacitados gestiona proyectos completos, desde la planificación inicial hasta la puesta en marcha, garantizando que cada instalación cumpla con los requisitos específicos de nuestros clientes y las normativas vigentes.
