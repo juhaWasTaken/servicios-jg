@@ -3,7 +3,7 @@ layout: "../../layouts/ServiceLayout.astro"
 service: "Mantenimiento Industrial y Reparaciones"
 description: "Ofrecemos servicios integrales de mantenimiento industrial y reparaciones para una amplia gama de equipos y sistemas."
 image1: {
-    src: "/service2/tools.svg",
+    src: "/src/assets/icons/tools.svg",
     alt: "test"
 }
 image2: {

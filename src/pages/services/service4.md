@@ -3,7 +3,7 @@ layout: "../../layouts/ServiceLayout.astro"
 service: "Instalaciones Industriales y Gestión de Proyectos"
 description: "Ofrecemos servicios integrales de instalaciones industriales y gestión de proyectos, abarcando una amplia gama de sistemas críticos para el funcionamiento eficiente de plantas y fábricas. "
 image1: {
-    src: "/service4/brand-databricks.svg",
+    src: "/src/assets/icons/brand-databricks.svg",
     alt: "test"
 }
 image2: {

@@ -3,7 +3,7 @@ layout: "../../layouts/ServiceLayout.astro"
 service: "Servicios de Corte y Conformado de Metales"
 description: "Fabricación de piezas especiales utilizando tornos, fresadoras y máquinas CNC para necesidades industriales específicas."
 image1: {
-    src: "/service5/writing.svg",
+    src: "/src/assets/icons/writing.svg",
     alt: "test"
 }
 image2: {
