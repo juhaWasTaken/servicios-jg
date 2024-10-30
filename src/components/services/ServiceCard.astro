@@ -1,4 +1,4 @@
----
+<!-- ---
 import { Image } from "astro:assets";
 
 const { frontmatter, url } = Astro.props;
@@ -10,5 +10,36 @@ const { service, image1, image2, description, link  } = frontmatter
         <h3 class=" text-lg font-semibold text-blueDarker mb group-hover:text-white mb-3 ">{service}</h3>
         <p class=" text-blueLight font-normal mb-[10px] group-hover:text-white">{description}</p>
         <a href={link} class=" text-blueMain text-sm hover:underline font-semibold group-hover:text-white">Más información</a> 
+    </div>
+</div> -->
+
+---
+import { Image } from "astro:assets";
+
+const { frontmatter, url } = Astro.props;
+const { service, image1, image2, description, link  } = frontmatter
+---
+<div class="group flex flex-col h-full bg-white p-6 shadow-md text-center hover:bg-blueMain transition-all ease-in-out">
+    <div class="flex flex-col h-full">
+        <!-- Contenedor del icono -->
+        <div class="mb-3">
+            <img src={image1.src} alt="Illustration" width={64} height={64} class='group-hover:stroke-white mx-auto' />
+        </div>
+        
+        <!-- Contenedor del contenido -->
+        <div class="flex flex-col flex-grow justify-between">
+            <!-- Título y descripción -->
+            <div>
+                <h3 class="text-lg font-semibold text-blueDarker group-hover:text-white mb-3">{service}</h3>
+                <p class="text-blueLight font-normal group-hover:text-white">{description}</p>
+            </div>
+            
+            <!-- Enlace - siempre al fondo -->
+            <div class="mt-4">
+                <a href={link} class="text-blueMain text-sm hover:underline uppercase font-semibold group-hover:text-white">
+                    Más información
+                </a>
+            </div>
+        </div>
     </div>
 </div>

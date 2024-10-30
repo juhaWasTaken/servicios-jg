@@ -3,7 +3,7 @@ layout: "../../layouts/ServiceLayout.astro"
 service: "Maquinado y Fabricación de Piezas Especiales"
 description: "Ofrecemos servicios especializados de maquinado y fabricación de piezas a medida para satisfacer las necesidades específicas de nuestros clientes en diversos sectores industriales."
 image1: {
-    src: "/service1/concretePump.svg",
+    src: "/service3/currency-solana.svg",
     alt: "test"
 }
 image2: {

@@ -3,7 +3,7 @@ layout: "../../layouts/ServiceLayout.astro"
 service: "Desarrollo de Proyectos Industriales e Ingeniería"
 description: "Ofrecemos servicios integrales de ingeniería y desarrollo de proyectos industriales, aprovechando nuestra amplia experiencia y conocimiento técnico para proporcionar soluciones innovadoras y eficientes."
 image1: {
-    src: "/service1/concretePump.svg",
+    src: "/service6/building-warehouse.svg", 
     alt: "test"
 }
 image2: {

@@ -13,7 +13,7 @@ const allServices = await Astro.glob('@/pages/services/*.md')
             <p class="text-[1.063rem] text-pretty md:max-w-[460px] text-black">Todos nuestros servicios cuentan y los hacemos con la mejor calidad posible. Nuestros años en la industria nos respaldan.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {
                 allServices.map((service) => (
                     <ServiceCard frontmatter={service.frontmatter} url={service.url} />
