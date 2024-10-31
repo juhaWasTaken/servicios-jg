@@ -9,7 +9,7 @@ details: {
     detail4: "Tenemos experiencia en proyectos de gran escala y complejidad técnica."
 }
 image1: {
-    src: "/src/assets/icons/trowel.svg",
+    src: "/services-icons/trowel.svg",
     alt: "test"
 }
 image2: {

@@ -9,7 +9,7 @@ details: {
     detail4: "Servicio de rolado con nuestra roladora hidráulica de 3 rodillos, con capacidad máxima de 1/2' x 4 pies."
 }
 image1: {
-    src: "/src/assets/icons/writing.svg",
+    src: "/services-icons/writing.svg",
     alt: "test"
 }
 image2: {

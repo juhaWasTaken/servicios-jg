@@ -9,7 +9,7 @@ details: {
     detail4: "Proporcionamos servicios de diseño y desarrollo de piezas personalizadas."
 }
 image1: {
-    src: "/src/assets/icons/currency-solana.svg",
+    src: "/services-icons/currency-solana.svg",
     alt: "test"
 }
 image2: {

@@ -9,7 +9,7 @@ details: {
     detail4: "Contamos con capacidad de respuesta rápida para reparaciones de emergencia"
 }
 image1: {
-    src: "/src/assets/icons/tools.svg",
+    src: "/services-icons/tools.svg",
     alt: "test"
 }
 image2: {

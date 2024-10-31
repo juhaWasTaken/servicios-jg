@@ -9,7 +9,7 @@ details: {
     detail4: "Utilizamos tecnologías de Computer Aided Manufacturing (CAM) para optimizar los procesos de producción."
 }
 image1: {
-    src: "/src/assets/icons/building-warehouse.svg", 
+    src: "/services-icons/building-warehouse.svg", 
     alt: "test"
 }
 image2: {

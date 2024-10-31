@@ -9,7 +9,7 @@ details: {
     detail4: "Gestionamos proyectos completos, desde el diseño hasta la implementación."
 }
 image1: {
-    src: "/src/assets/icons/brand-databricks.svg",
+    src: "/services-icons/brand-databricks.svg",
     alt: "test"
 }
 image2: {
