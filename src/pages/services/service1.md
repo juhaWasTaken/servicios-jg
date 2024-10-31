@@ -13,7 +13,7 @@ image1: {
     alt: "test"
 }
 image2: {
-    src: "/service1/services.webp",
+    src: "/services-images/services.webp",
     alt: "test"
 }
 link: "/services/service1"
