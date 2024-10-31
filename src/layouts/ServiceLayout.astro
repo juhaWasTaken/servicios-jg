@@ -3,15 +3,16 @@ import { Image } from "astro:assets";
 import Layout from "./Layout.astro";
 import Container from "@/components/Container.astro";
 import FooterPage from "@/components/contact/FooterPage.astro";
+import Point from "@/assets/icons/point.svg"
 
 const { frontmatter } = Astro.props;
-const { service, description, image1, image2 } = frontmatter
+const { service, description, details ,image1, image2 } = frontmatter
 ---
 <Layout title={service}>
     <section class="relative h-[380px] md:h-[350px] w-full overflow-hidden p-3">
         <Image 
             src={image2.src} 
-            alt="Page Header" 
+            alt="Imagen ilustrativa del servicio" 
             class="absolute inset-0 w-full h-full object-cover object-center"
             loading="eager"
             width={100}
@@ -45,21 +46,21 @@ const { service, description, image1, image2 } = frontmatter
                 <aside class="md:w-[30%] bg-[#f1f4f9] p-10">
                     <h2 class="font-bold text-blueDarker text-[20px] border-b-[2px] border-dashed border-[#0c2d6250] pb-3 mb-4">Detalles del servicio</h2>
                     <ul class="space-y-4">
-                        <li class="flex flex-col font-base text-blueDarker text-lg">
-                            <span class="font-semibold text-blueDarker text-lg">Ubicación</span>
-                            Ejemplo de ubicación
+                        <li class="flex font-base text-blueDarker text-lg">
+                            
+                            1.- {details.detail1}
                         </li>
-                        <li class="flex flex-col font-base text-blueDarker text-lg">
-                            <span class="font-semibold text-blueDarker text-lg">Ubicación</span>
-                            Ejemplo de ubicación
+                        <li class="flex font-base text-blueDarker text-lg">
+                            
+                            2.- {details.detail2}
                         </li>
-                        <li class="flex flex-col font-base text-blueDarker text-lg">
-                            <span class="font-semibold text-blueDarker text-lg">Ubicación</span>
-                            Ejemplo de ubicación
+                        <li class="flex font-base text-blueDarker text-lg">
+                            
+                            3.- {details.detail3}
                         </li>
-                        <li class="flex flex-col font-base text-blueDarker text-lg">
-                            <span class="font-semibold text-blueDarker text-lg">Ubicación</span>
-                            Ejemplo de ubicación
+                        <li class="flex font-base text-blueDarker text-lg">
+                            
+                            4.- {details.detail4}
                         </li>
                     </ul>
                 </aside>

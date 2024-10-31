@@ -2,6 +2,12 @@
 layout: "../../layouts/ServiceLayout.astro"
 service: "Soldadura y Fabricación Estructural"
 description: "Ofrecemos una amplia gama de servicios de soldadura y fabricación estructural, abarcando desde aluminio hasta acero inoxidable y acero al carbono."
+details: {
+    detail1: "Trabajamos con aluminio, acero inoxidable y acero al carbono.",
+    detail2: "Hacemos estructuras metálicas para aplicaciones industriales.",
+    detail3: "Taller de soldadura equipado para garantizar precisión y calidad.",
+    detail4: "Tenemos experiencia en proyectos de gran escala y complejidad técnica."
+}
 image1: {
     src: "/src/assets/icons/trowel.svg",
     alt: "test"
