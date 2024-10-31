@@ -2,6 +2,12 @@
 layout: "../../layouts/ServiceLayout.astro"
 service: "Mantenimiento Industrial y Reparaciones"
 description: "Ofrecemos servicios integrales de mantenimiento industrial y reparaciones para una amplia gama de equipos y sistemas."
+details: {
+    detail1: "Mantenimiento preventivo y correctivo para una amplia gama de equipos industriales.",
+    detail2: "Servicio especializado para sistemas de aire acondicionado y refrigeración industrial.",
+    detail3: "Proveemos mantenimiento y calibración para sistemas de gas natural y GLP.",
+    detail4: "Contamos con capacidad de respuesta rápida para reparaciones de emergencia"
+}
 image1: {
     src: "/src/assets/icons/tools.svg",
     alt: "test"

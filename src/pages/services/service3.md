@@ -2,6 +2,12 @@
 layout: "../../layouts/ServiceLayout.astro"
 service: "Maquinado y Fabricación de Piezas Especiales"
 description: "Ofrecemos servicios especializados de maquinado y fabricación de piezas a medida para satisfacer las necesidades específicas de nuestros clientes en diversos sectores industriales."
+details: {
+    detail1: "Contamos con maquinaria de última generación, incluyendo tornos, fresadoras y equipos CNC.",
+    detail2: "Ofrecemos servicios de maquinado vertical, horizontal y torneado para una amplia variedad de piezas.",
+    detail3: "Tenemos capacidad para trabajar con diversos materiales, adaptándonos a las especificaciones del cliente.",
+    detail4: "Proporcionamos servicios de diseño y desarrollo de piezas personalizadas."
+}
 image1: {
     src: "/src/assets/icons/currency-solana.svg",
     alt: "test"

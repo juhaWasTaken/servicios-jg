@@ -2,6 +2,12 @@
 layout: "../../layouts/ServiceLayout.astro"
 service: "Instalaciones Industriales y Gestión de Proyectos"
 description: "Ofrecemos servicios integrales de instalaciones industriales y gestión de proyectos, abarcando una amplia gama de sistemas críticos para el funcionamiento eficiente de plantas y fábricas. "
+details: {
+    detail1: "Realizamos instalaciones eléctricas industriales de alta y baja tensión, cumpliendo con normas mexicanas y NEC.",
+    detail2: "Instalamos y mantenemos sistemas de distribución de aire comprimido, agua y gases especiales.",
+    detail3: "Ofrecemos de instalación para sistemas neumáticos e hidráulicos",
+    detail4: "Gestionamos proyectos completos, desde el diseño hasta la implementación."
+}
 image1: {
     src: "/src/assets/icons/brand-databricks.svg",
     alt: "test"

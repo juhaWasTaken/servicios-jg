@@ -2,6 +2,12 @@
 layout: "../../layouts/ServiceLayout.astro"
 service: "Desarrollo de Proyectos Industriales e Ingeniería"
 description: "Ofrecemos servicios integrales de ingeniería y desarrollo de proyectos industriales, aprovechando nuestra amplia experiencia y conocimiento técnico para proporcionar soluciones innovadoras y eficientes."
+details: {
+    detail1: "Proporcionamos servicio de diseño y planificación de instalaciones industriales utilizando software CAD avanzado.",
+    detail2: "Ofrecemos análisis y optimización de procesos industriales para mejorar la eficiencia y reducir costos.",
+    detail3: "Realizamos cálculos estructurales y diseño arquitectónico para proyectos industriales de diversa escala.",
+    detail4: "Utilizamos tecnologías de Computer Aided Manufacturing (CAM) para optimizar los procesos de producción."
+}
 image1: {
     src: "/src/assets/icons/building-warehouse.svg", 
     alt: "test"

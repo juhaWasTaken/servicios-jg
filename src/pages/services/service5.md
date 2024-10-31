@@ -2,6 +2,12 @@
 layout: "../../layouts/ServiceLayout.astro"
 service: "Servicios de Corte y Conformado de Metales"
 description: "Fabricación de piezas especiales utilizando tornos, fresadoras y máquinas CNC para necesidades industriales específicas."
+details: {
+    detail1: "Utilizamos un pantógrafo MARK7 con área de corte de 5x10 pies, equipado con plasma Hypertherm Powermax125 para cortes de alta precisión.",
+    detail2: "Nuestra dobladora de cortina Cincinnati 7 tiene una capacidad de 175 toneladas y 12 pies de longitud, permitiendo el conformado de piezas grandes.",
+    detail3: "La cizalla mecánica-neumática CINCINNATI puede cortar láminas de hasta 3/16' x 10 pies.",
+    detail4: "Servicio de rolado con nuestra roladora hidráulica de 3 rodillos, con capacidad máxima de 1/2' x 4 pies."
+}
 image1: {
     src: "/src/assets/icons/writing.svg",
     alt: "test"
